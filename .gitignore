@@ -1,0 +1,24 @@
+# Python cache
+__pycache__/
+*.pyc
+*.log
+*.bak
+*.tmp
+.ipynb_checkpoints/
+
+# Large / unnecessary data files
+mlruns/
+*.tm
+data/*.parquet
+creditcard.csv
+
+# Keep reproducible data
+!data/reference_predictions.csv
+!data/predictions.csv
+
+# Workflow YAMLs: keep for CI/CD
+!.github/workflows/*.yml
+
+# Ignore temporary YAMLs
+*.tmp.yml
+*.bak.yml
